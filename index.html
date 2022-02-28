@@ -9,16 +9,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main class="grid grid-cols-1 md:grid-cols-2">
-        <section class="">
+    <main class="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-12">
+        <!-- left side div search container -->
+        <section >
+            <!-- search header  -->
             <header class=" flex justify-center">
                 <h2 class="text-yellow-800 text-2xl md:text-4xl my-3 ">Search Players</h2>
             </header>
-            <section>
-
+            <!-- search box -->
+            <div class="search-box my-4 flex justify-center">
+                <input type="text" class="border outline-none focus:border-2 overflow-hidden rounded py-2 px-4" placeholder="Search">
+                <button class="border rounded px-3 focus:border-2 hover:bg-slate-500 ease-in-out hover:text-white">Search</button>
+            </div>
+            <!-- search result  -->
+            <section class="result h-[500px] overflow-y-scroll flex items-center flex-col">
+                <div class="palyer">
+                    <div class="img-div">
+                        <img src="./image/19-messi.jpeg" alt="player">
+                    </div>
+                    <h3 class="text-3xl">Name:</h3>
+                    <h4 class="text-2xl">Country:</h4>
+                </div>
+                <div class="palyer">
+                    <div class="img-div">
+                        <img src="./image/19-messi.jpeg" alt="player">
+                    </div>
+                    <h3 class="text-3xl">Name:</h3>
+                    <h4 class="text-2xl">Country:</h4>
+                </div>
+                <div class="palyer">
+                    <div class="img-div">
+                        <img src="./image/19-messi.jpeg" alt="player">
+                    </div>
+                    <h3 class="text-3xl">Name:</h3>
+                    <h4 class="text-2xl">Country:</h4>
+                </div>
+                <div class="palyer">
+                    <div class="img-div">
+                        <img src="./image/19-messi.jpeg" alt="player">
+                    </div>
+                    <h3 class="text-3xl">Name:</h3>
+                    <h4 class="text-2xl">Country:</h4>
+                </div>
             </section>
         </section>
+        <!-- details container  -->
         <section>
+            <!-- details header  -->
             <header class=" flex justify-center">
                 <h2 class="text-yellow-800 text-2xl md:text-4xl my-3 ">Players Details</h2>
             </header>
